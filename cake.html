@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sweet Treats Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #9ec1cf;
+            color: #4b2e2e;
+        }
+
+        header {
+            background-color: #ed79e9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f35f2a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #8b4513;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: rgb(215, 204, 204);
+            width: 220px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px white;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #9facd8;
+            font-weight: bold;
+        }
+
+        .offer {
+            background-color: #e19e39;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #25e9a5;
+            color: rgb(245, 77, 77);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sweet Treats Bakery</h1>
+        <p>Freshly Baked with Love!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Sweet Treats Bakery</h2>
+        <p>Enjoy delicious cakes, pastries and cookies made with fresh ingredients.</p>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" width="350" height="220">
+    </section>
+
+    <section id="cakes">
+        <h2>Our Cakes</h2>
+
+        <div class="products">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate flavour.</p>
+                <p class="price">₹500</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400">
+                <h3>Strawberry Cake</h3>
+                <p>Fresh strawberry cream.</p>
+                <p class="price">₹600</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400">
+                <h3>Vanilla Cake</h3>
+                <p>Soft and creamy cake.</p>
+                <p class="price">₹450</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pastries">
+        <h2>Our Pastries</h2>
+
+        <div class="products">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400">
+                <h3>Chocolate Pastry</h3>
+                <p class="price">₹80</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400">
+                <h3>Cream Pastry</h3>
+                <p class="price">₹70</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cookies">
+        <h2>Our Cookies</h2>
+
+        <div class="products">
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400">
+                <h3>Chocolate Cookies</h3>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400">
+                <h3>Butter Cookies</h3>
+                <p class="price">₹100</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="custom">
+        <h2>Custom Cake Designs</h2>
+        <p>We make special cakes for birthdays, weddings and anniversaries.</p>
+
+        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500" width="300" height="200">
+
+        <p>Contact us to order your dream cake!</p>
+    </section>
+    <section id="offers">
+        <div class="offer">
+            <h2>Special Seasonal Offers!</h2>
+            <h3>Festival Special - 20% OFF</h3>
+            <p>Get exciting discounts on selected cakes and pastries.</p>
+            <p>Offer valid for a limited time!</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Main Road, Vijayawada, Andhra Pradesh</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Email: sweettreats@gmail.com</p>
+        <p>Opening Hours: 9:00 AM - 9:00 PM</p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Sweet Treats Bakery</p>
+        <p>Thank you for visiting our bakery!</p>
+    </footer>
+</body>
+
+</html>
