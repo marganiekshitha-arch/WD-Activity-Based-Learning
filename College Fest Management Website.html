@@ -3,37 +3,36 @@
 
 <head>
     <title>College Fest 2026</title>
-
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: #e36a6a;
         }
 
         header {
             background: #24104f;
-            color: white;
+            color: rgb(236, 121, 121);
             text-align: center;
             padding: 20px;
         }
 
         nav a {
-            color: white;
+            color: rgb(233, 112, 112);
             text-decoration: none;
             margin: 12px;
         }
 
         .banner {
             background: linear-gradient(120deg, #5425a8, #e14b8a);
-            color: white;
+            color: rgb(224, 95, 95);
             text-align: center;
             padding: 80px 20px;
         }
 
         button {
             background: orange;
-            color: white;
+            color: rgb(116, 237, 221);
             border: none;
             padding: 12px 20px;
             border-radius: 5px;
@@ -72,7 +71,7 @@
             width: 80%;
             margin: auto;
             border-collapse: collapse;
-            background: white;
+            background: rgb(158, 224, 114);
         }
 
         th,
@@ -83,7 +82,7 @@
 
         th {
             background: #5425a8;
-            color: white;
+            color: rgb(218, 230, 87);
         }
 
         ul {
@@ -92,7 +91,7 @@
         }
 
         form {
-            background: white;
+            background: rgb(242, 116, 223);
             padding: 25px;
             max-width: 400px;
             margin: auto;
@@ -110,7 +109,7 @@
 
         footer {
             background: #24104f;
-            color: white;
+            color: rgb(229, 93, 145);
             text-align: center;
             padding: 15px;
         }
@@ -156,9 +155,9 @@
     <section id="home" class="banner">
         <h2 style="color:white;">Celebrate Talent & Creativity</h2>
         <p>Join us for three days of fun, learning and competition!</p>
-        <button onclick="location.href='#register'">
-            Register Now
-        </button>
+        <a href="#register">
+            <button type="button">Register Now</button>
+        </a>
     </section>
 
     <section id="events">
@@ -294,12 +293,9 @@
     <section id="register">
         <h2>Student Registration</h2>
 
-        <form onsubmit="registerStudent(event)">
-
+        <form>
             <input type="text" placeholder="Enter Your Name" required>
-
             <input type="email" placeholder="Enter Your Email" required>
-
             <input type="text" placeholder="College Name" required>
 
             <select required>
@@ -315,10 +311,7 @@
             </select>
 
             <button type="submit">Submit Registration</button>
-
         </form>
-
-        <p id="message"></p>
     </section>
 
     <section id="contact">
@@ -332,16 +325,6 @@
         <p>© 2026 College Fest Management</p>
         <p>All Rights Reserved</p>
     </footer>
-
-    <script>
-        function registerStudent(event) {
-            event.preventDefault();
-
-            alert("Registration Successful! Thank You.");
-
-            event.target.reset();
-        }
-    </script>
 
 </body>
 
